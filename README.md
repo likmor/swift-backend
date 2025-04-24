@@ -19,7 +19,7 @@ APIs will be available at localhost:8080
     "bankName": string,
     "countryISO2": string,
     "countryName": string,
-    “isHeadquarter”: bool,
+    "isHeadquarter": bool,
     "swiftCode": string,
 }
 
