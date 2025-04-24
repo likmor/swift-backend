@@ -12,8 +12,8 @@ model Address {
   address     String?
   iso2Code    String
   countryName String
-  townName    String
-  timeZone    String
+  townName    String?
+  timeZone    String?
   banks       Bank[]
 }
 
