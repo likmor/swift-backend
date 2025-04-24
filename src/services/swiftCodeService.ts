@@ -43,7 +43,7 @@ export const getSwiftCodeDetails = async (code: string) => {
       },
     },
   });
-  const branchesInfo = branches.map((el) => ({
+  const branchesInfo = branches.map((el : any) => ({
     address: el.bank?.address.address,
     bankName: el.bank?.name,
     countryISO2: el.bank?.address.iso2Code,
@@ -85,7 +85,7 @@ export const getSwiftCodesFromISO2 = async (iso2: string) => {
   const data = {
     countryISO2: iso2,
     countryName: result[0].bank?.address.countryName,
-    swiftCodes: result.map((el) => ({
+    swiftCodes: result.map((el : any) => ({
       address: el.bank?.address.address,
       bankName: el.bank?.name,
       countryISO2: iso2,
