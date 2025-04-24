@@ -26,7 +26,7 @@ APIs will be available at localhost:8080
 ```
 - GET:  /v1/swift-codes/country/{countryISO2code} Return all SWIFT codes with details for a specific country (both headquarters and branches)
 - GET:  /v1/swift-codes/{swift-code} Retrieve details of a single SWIFT code whether for a headquarters or branches
-## How to test
+## How to run tests (stop all containers before running)
 ```bash
 npm i
 npm test
